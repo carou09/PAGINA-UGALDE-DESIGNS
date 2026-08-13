@@ -1,0 +1,27 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "missing": [
+        {
+          "type": "host",
+          "value": "ugalde.designs.ugaldeassociation.com"
+        }
+      ],
+      "destination": "https://ugalde.designs.ugaldeassociation.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "missing": [
+        {
+          "type": "host",
+          "value": "ugalde.designs.ugaldeassociation.com"
+        }
+      ],
+      "destination": "https://ugalde.designs.ugaldeassociation.com/:path*",
+      "permanent": true
+    }
+  ]
+}
